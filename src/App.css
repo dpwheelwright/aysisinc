@@ -1,3 +1,22 @@
-.tabs {
-    
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('./assets/fonts/Gotham-Light.woff2') format('woff2');
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('./assets/fonts/GothamMedium.ttf');
+    font-size:12px;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('./assets/fonts/GothamBook.ttf') format('truetype');
+    font-size:12px;
+}
+
+body {
+    font-family: 'Gotham Light';
+    margin:0 100px;
 }

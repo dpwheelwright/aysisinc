@@ -1,4 +1,7 @@
 import React from 'react';
+import { Tabs } from './components/tabs';
+import { Header } from './components/header';
+import styles from './App.css';
 
 export class App extends React.Component {
     constructor() {
@@ -6,6 +9,12 @@ export class App extends React.Component {
     }
 
     render() {
-        return(<div>Hello, World</div>)
+        return(
+            <div>
+                <Header/>
+                <Tabs/>
+            </div>
+        )
+
     }
 }

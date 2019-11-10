@@ -1,0 +1,20 @@
+.tabs {
+    list-style: none;
+    display: flex;
+    box-shadow: 0px 2px 5px grey;
+    width:100%;
+    padding:0;
+   
+}
+.tab {
+    width:100%;
+    padding:16px;
+    text-align: center;
+    color:#FFFFFF;
+    background-color: #1C2541;
+    transition:background-color 0.2s ease;
+    cursor:pointer;
+}
+.tab:hover {
+    background-color: #3A506B;
+}
