@@ -4,6 +4,7 @@
     box-shadow: 0px 2px 5px grey;
     width:100%;
     padding:0;
+    margin:0;
    
 }
 .tab {
@@ -12,9 +13,19 @@
     text-align: center;
     color:#FFFFFF;
     background-color: #1C2541;
-    transition:background-color 0.2s ease;
+    transition:background-color 0.2s ease-in-out;
     cursor:pointer;
 }
 .tab:hover {
     background-color: #3A506B;
+    color:#ECEFBF;
+}
+.tab-content {
+    height:300px;
+    border-left:1px solid #1C2541;
+    border-bottom: 1px solid #1C2541;
+    border-right:1px solid #1C2541;
+}
+.tab-content-text {
+    margin:0;
 }

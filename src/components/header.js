@@ -11,6 +11,8 @@ export class Header extends React.Component {
                 <div className={styles['header-nav']}>
 
                 </div>
+                <div className={styles['header-content']}>
+                </div>
             </div>
         )
     }
