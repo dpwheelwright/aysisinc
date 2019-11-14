@@ -29,3 +29,6 @@
 .tab-content-text {
     margin:0;
 }
+.about-me-images {
+    display:flex;
+}

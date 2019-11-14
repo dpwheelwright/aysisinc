@@ -1,5 +1,10 @@
 import React from 'react';
 import styles from './header.css';
+import airforce from '../assets/images/department-of-air-force.png';
+import dod from '../assets/images/dod.png';
+import va from '../assets/images/veteran-affairs.png';
+import eda from '../assets/images/eda.png';
+import dla from '../assets/images/dla.png';
 
 export class Header extends React.Component {
     constructor() {
@@ -12,6 +17,7 @@ export class Header extends React.Component {
 
                 </div>
                 <div className={styles['header-content']}>
+                   
                 </div>
             </div>
         )
