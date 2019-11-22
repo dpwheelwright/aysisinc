@@ -17,7 +17,11 @@ export class Header extends React.Component {
 
                 </div>
                 <div className={styles['header-content']}>
-                   
+                   <img src={airforce}></img>
+                   <img src={dod}></img>
+                   <img src={va}></img>
+                   <img src={eda}></img>
+                   <img src={dla}></img>
                 </div>
             </div>
         )
