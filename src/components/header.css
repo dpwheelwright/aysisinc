@@ -1,5 +1,5 @@
 .header {
-    height:200px;
+    height:auto;
 }
 .header-nav {
     height:50px;
@@ -11,6 +11,10 @@
 }
 .header-content-icons {
     display:flex;
+}
+.header-content-icon {
+    width:100px;
+    height:100px;
 }
 .header-content-icons > img {
     width:100px;

@@ -5,6 +5,9 @@ import dod from '../assets/images/dod.png';
 import va from '../assets/images/veteran-affairs.png';
 import eda from '../assets/images/eda.png';
 import dla from '../assets/images/dla.png';
+import doa from '../assets/images/department-of-army.png';
+import ob from '../assets/images/ob10.png';
+import businessHeader from '../assets/images/business-header.png';
 
 export class Header extends React.Component {
     constructor() {
@@ -17,11 +20,7 @@ export class Header extends React.Component {
 
                 </div>
                 <div className={styles['header-content']}>
-                   <img src={airforce}></img>
-                   <img src={dod}></img>
-                   <img src={va}></img>
-                   <img src={eda}></img>
-                   <img src={dla}></img>
+                    <img src={businessHeader}/>
                 </div>
             </div>
         )
