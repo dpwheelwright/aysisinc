@@ -12,6 +12,30 @@ import businessHeader from '../assets/images/business-header.png';
 export class Header extends React.Component {
     constructor() {
         super();
+        this.state = {
+            logoSource: airforce
+        };
+        this.logoTimer;
+        this.logoIndex = 0;
+        this.logos = [
+            airforce,
+            dod,
+            va,
+            eda,
+            dla,
+            doa,
+            ob
+        ]
+    }
+    componentDidMount() {
+        this.logoTimer = setInterval(() => {
+            if (this.logoIndex === this.logos.length) {
+                this.logoIndex = 0;
+            } else {
+                this.logoIndex += 1;
+            }
+            this.setState({ logoSource: this.logos[this.logoIndex]})
+        }, 3000);
     }
     render() {
         return(
@@ -20,7 +44,7 @@ export class Header extends React.Component {
 
                 </div>
                 <div className={styles['header-content']}>
-                    <img src={businessHeader}/>
+
                 </div>
             </div>
         )

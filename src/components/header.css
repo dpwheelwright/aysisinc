@@ -1,5 +1,8 @@
 .header {
     height:auto;
+    -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 .header-nav {
     height:50px;
@@ -8,6 +11,17 @@
 .header-content {
     height:100%;
     background-color:#ebf1f5;
+}
+.header-logo {
+    width:150px;
+    height:150px;
+    position: absolute;
+    left:47%;
+}
+.header-banner {
+    width:100%;
+    height:auto;
+    margin:0;
 }
 .header-content-icons {
     display:flex;

@@ -3,6 +3,7 @@ import styles from './tabs.css';
 import renee from '../assets/images/renee.jpg';
 import jerry from '../assets/images/jerry.jpg';
 import { TabFAQ } from './tab-faq';
+import fidelity from '../assets/images/fidelity-partners.jpg';
 
 export class Tabs extends React.Component {
     constructor() {
@@ -10,21 +11,6 @@ export class Tabs extends React.Component {
         this.state = {
             selectedTab: 'about-me'
         }
-
-        this.faq = [
-            {
-                question:'Can I still submit my invoice to DFAS if my contract doesn\'t require electronic submission?',
-                answer: 'All DFAS payment offices are capable of accepting EDI interfaces. Submission of your invoice via WAWF should be accepted.'
-            },
-            {
-                question: 'My contract requires electronic submission and the invoice must be submitted to the activity for approval. The activities\' DoDACC is not registered in WAWF. What should I do?',
-                answer: 'Contact your local Contracting Office and let them intervene with the activity to determine why they aren\'t registered in WAWF. Request permission to submit a Stand Alone invoice in WAWF and FAX a'
-            },
-            {
-                question: 'The receiving activity rejected my Combo receiving report because of a dispute with the items received. Can they do that?',
-                answer: 'Nothing can preclude an activity from rejecting your document. The question is, did they improperly reject your document. Yes they did. The receiving report on a Combo can be accepted for less quantities than what is'
-            }
-        ]
     }
     onTabSelected = (tab) => {
         this.setState({selectedTab: tab});
@@ -37,7 +23,6 @@ export class Tabs extends React.Component {
                 <li className={this.state.selectedTab !== 'services' ? styles['tab'] : styles['tab-active']} onClick={() => this.onTabSelected('services')}>Services</li>
                 <li className={this.state.selectedTab !== 'faq' ? styles['tab'] : styles['tab-active']} onClick={() => this.onTabSelected('faq')}>FAQ</li>
                 <li className={this.state.selectedTab !== 'clients' ? styles['tab'] : styles['tab-active']} onClick={() => this.onTabSelected('clients')}>Clients</li>
-                <li className={this.state.selectedTab !== 'contact-us' ? styles['tab'] : styles['tab-active']} onClick={() => this.onTabSelected('contact-us')}>Contact Us</li>
             </ul>
             {this.state.selectedTab === 'about-me' && <div className={styles['tab-content']}>
                 <div className={styles['tab-content-about-us']}>
@@ -74,10 +59,12 @@ export class Tabs extends React.Component {
                 <TabFAQ/>
             </div>}
             {this.state.selectedTab === 'clients' && <div className={styles['tab-content']}>
-                <p className={styles['tab-content-text']}>Clients</p>
-            </div>}
-            {this.state.selectedTab === 'contact-us' && <div className={styles['tab-content']}>
-                <p className={styles['tab-content-text']}>Contact Us</p>
+                <ul>
+                    <li>
+                        <img src={fidelity}/>
+                        <p></p>
+                    </li>
+                </ul>
             </div>}
         </div>
         )
