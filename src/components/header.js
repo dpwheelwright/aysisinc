@@ -44,7 +44,7 @@ export class Header extends React.Component {
 
                 </div>
                 <div className={styles['header-content']}>
-
+                    <img src={businessHeader}/>
                 </div>
             </div>
         )

@@ -18,5 +18,22 @@
 
 body {
     font-family: 'Gotham Light';
-    margin:0 10%;
+    margin:0 20%;
+}
+.welcome-message {
+    margin:12px;
+    display:flex;
+}
+.welcome-message-column {
+    flex: 1 1 50%;
+}
+.welcome-message-column-list-item {
+    display:flex;
+}
+.welcome-message-column-list-item-text {
+    margin:0;
+}
+.welcome-message-column-list-item > img {
+    height:32px;
+    width:32px;
 }

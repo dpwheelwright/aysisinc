@@ -4,7 +4,7 @@ export const TabFAQ = () => {
     return (
         <ul>
             <li>
-                <h3>Can I still submit my invoice to DFAS if my contract doesn't require electronic submission?</h3>
+                <h2>Can I still submit my invoice to DFAS if my contract doesn't require electronic submission?</h2>
                 <p>All DFAS payment offices are capable of accepting EDI interfaces. Submission of your invoice via WAWF should be accepted.</p>
             </li>
             <li>
