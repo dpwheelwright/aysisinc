@@ -17,25 +17,26 @@ module.exports = {
 
             },
             {
-                test: /.(css)$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [{
-                            loader: 'css-loader',
-                            options: {
-                                modules: true,
-                                localIdentName: '[name]__[local]__[hash:base64:5]'
-                            }
-
-                        }
-                    ]
-                })
+             test: /\.woff2(\?\S*)?$/,
+               use: {
+                 loader: 'url-loader'
+               }
             },
             {
-                test:/\.(eot|svg|ttf|woff|woff2?)(\?.+)?$/,
-                loader: 'url-loader'
+              test: /\.css$/,
+              use: [MiniCssExtractPlugin.loader, "css-loader"]
             },
-            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
+            {
+             test: /\.(png|jpe?g|svg|gif)$/i,
+             use: [
+               {
+                 loader: 'file-loader',
+                 options: {
+                   name: '[name].[ext]'
+                 }
+               },
+             ],
+           }
         ]
     },
     plugins: [

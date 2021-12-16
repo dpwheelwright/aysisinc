@@ -5,7 +5,7 @@
   transition: all .3s ease-in-out;
 }
 .header-nav {
-    height:50px;
+    height:64px;
     background-color:#0B132B;
 }
 .header-content {
@@ -13,25 +13,6 @@
     background-color:#ebf1f5;
     text-align: center;
 }
-.header-logo {
-    width:150px;
-    height:150px;
-    position: absolute;
-    left:47%;
-}
-.header-banner {
-    width:100%;
-    height:auto;
-    margin:0;
-}
-.header-content-icons {
-    display:flex;
-}
-.header-content-icon {
-    width:100px;
-    height:100px;
-}
-.header-content-icons > img {
-    width:100px;
-    height:100px;
+.header-top {
+    height:50px;
 }

@@ -40,11 +40,14 @@ export class Header extends React.Component {
     render() {
         return(
             <div className={styles['header']}>
+                <div className={'header-top'}>
+
+                </div>
                 <div className={styles['header-nav']}>
 
                 </div>
                 <div className={styles['header-content']}>
-                    <img src={businessHeader}/>
+
                 </div>
             </div>
         )
