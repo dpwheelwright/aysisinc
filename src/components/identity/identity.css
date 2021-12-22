@@ -1,0 +1,19 @@
+.identity-container {
+    margin:auto 0;
+}
+.identity-button {
+    border-radius: 4px;
+    border:1px solid white;
+    background-color: transparent;
+    padding:8px;
+    font-size:16px;
+    color:white;
+    margin:8px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+}
+.identity-button:hover {
+    background-color:slategrey;
+    cursor:pointer;
+
+}

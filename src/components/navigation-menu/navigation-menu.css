@@ -1,0 +1,57 @@
+.navigation-menu {
+    display:grid;
+    grid-template-columns: repeat(4, 140px);
+    text-decoration: none;
+    list-style: none;
+    grid-column-start: 3;
+}
+
+.navigation-menu-item {
+    font-family:'Montserrat';
+    text-decoration: none;
+    display:inline-block;
+    text-align: center;
+    padding:22px;
+    cursor: pointer;
+    border-bottom: none;
+    transition:border-bottom 0.5s;
+    
+}
+.navigation-menu-item > a {
+    color:white;
+    text-decoration:none;
+    height:100%;
+    display:block;
+}
+
+.navigation-menu > a:hover {
+    color:#315f9f
+}
+
+.navigation-menu-item > a:before {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 3px;
+    background: transparent;
+    content: '';
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+@media screen and  (max-width: 1212px) {
+    .services-container {
+        display:grid;
+        padding:8px;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr;
+        grid-auto-flow: column;
+        max-height: 640px;
+        background-color:#f6f6f6;
+        row-gap: 8px;
+    }
+}

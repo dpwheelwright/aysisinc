@@ -1,0 +1,98 @@
+.service-description-container {
+    width:512px;
+    height:320px;
+    box-shadow: 2px 2px 2px 1px #eaeaea;
+    background-color:#FFFFFF;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:64px 1fr;
+    grid-auto-flow: column;
+    padding:32px;
+}
+.service-description-header {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+}
+
+.service-description-icon {
+    width:64px;
+    height:64px;
+}
+.service-description-text-container {
+    display:grid;
+    grid-template-columns: auto 1fr;
+}
+.service-description-text {
+    font-size:24px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    text-align: left;
+    vertical-align: center;
+    margin:auto 16px;
+    color:#465A69;
+}
+.service-description-sub-text {
+    font-size:18px;
+    font-family:'KleeOne';
+    margin:auto;
+    text-align: left;
+}
+
+@media screen and  (max-width: 768px) {
+    .service-description-container {
+        width:auto;
+        height:auto;
+        box-shadow: 2px 2px 2px 1px #eaeaea;
+        background-color:#FFFFFF;
+        margin:auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto auto auto;
+        grid-auto-flow: column;
+        padding:32px;
+    }
+
+    .service-description-text {
+        font-size:17px;
+        font-family: 'Montserrat';
+        text-align: left;
+        vertical-align: center;
+        margin:16px auto;
+        color:#465A69;
+        font-weight: normal;
+        font-size:3vw;
+    }
+
+    .service-description-icon {
+        width:64px;
+        height:64px;
+        margin: 8px auto;
+    }
+    .service-description-sub-text {
+        font-size:16px;
+        font-family:'KleeOne';
+        margin:auto;
+        text-align: center;
+    }
+}
+
+@media screen and  (max-width: 512px) {
+    .service-description-text {
+        font-size:17px;
+        font-family: 'Montserrat';
+        text-align: left;
+        vertical-align: center;
+        margin:16px auto;
+        color:#465A69;
+        font-weight: bold;
+        font-size:4vw;
+    }
+
+    .service-description-sub-text {
+        font-size:16px;
+        font-family:'KleeOne';
+        margin:auto;
+        text-align: center;
+    }
+}

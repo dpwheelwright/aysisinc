@@ -1,0 +1,47 @@
+.header-container {
+    display:grid;
+    grid-template-rows: auto auto;
+    width:auto;
+    background: linear-gradient(90deg, rgba(244,243,243,1) 0%, rgb(217, 217, 217) 100%);
+}
+.header-nav {
+    display:grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    height:auto;
+    width:100%;
+    background-color: #3b628d;
+}
+.header-slogan-backdrop {
+    opacity: 50%;
+    grid-column-start: 1;
+    grid-column-end:2;
+    background-color:#3b628d;
+    position: absolute;
+    width:50%;
+    height:256px;
+    margin-top:128px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.header-slogan {
+    grid-column:2;
+    grid-row: 2;
+    font-family: 'Montserrat';
+    font-size:32px;
+    color:white;
+    opacity: 100%;
+}
+.banner {
+    width:100%;
+    height:100%;
+}
+
+@media screen and  (max-width: 1212px) {
+    .header-nav {
+        display:grid;
+        grid-template-columns: 1fr 1fr 64px;
+        height:72px;
+        position:absolute;
+        width:100%;
+    }
+}

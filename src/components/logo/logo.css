@@ -1,0 +1,27 @@
+.logo {
+    text-decoration: none;
+    color:white;
+    margin-left:64px;
+}
+.logo-header {
+    font-size: 24px;
+    color:white;
+    justify-items: end;
+    vertical-align: middle;
+    font-family: 'Michroma-Regular';
+}
+.logo-sub-header {
+    font-size:24px;
+    font-family: 'Montserrat';
+}
+
+@media screen and  (max-width: 1212px) {
+    .logo-header {
+        font-size: 24px;
+        color:white;
+        grid-column-start: 1;
+        justify-items: end;
+        vertical-align: middle;
+        margin: 20px 0 0 20px;
+    }
+}

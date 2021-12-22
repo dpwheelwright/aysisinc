@@ -1,0 +1,26 @@
+.departments-container {
+    display:grid;
+    padding:24px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    background-color:white;
+}
+.department-image {
+    width:256px;
+    height:256px;
+    margin:0 auto;
+}
+
+@media screen and  (max-width: 2365px) {
+    .department-image {
+        width:128px;
+        height:128px;
+        margin:0 auto;
+    }
+}
+
+@media screen and  (max-width: 1212px) {
+    .departments-container {
+        display:none;
+    }
+}

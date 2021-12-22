@@ -1,0 +1,13 @@
+.register-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+}
+.input-label-text {
+    font-family: 'Montserrat';
+}
+
+.input-textbox {
+    font-family: 'Montserrat';
+}
