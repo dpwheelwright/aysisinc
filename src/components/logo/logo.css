@@ -24,4 +24,7 @@
         vertical-align: middle;
         margin: 20px 0 0 20px;
     }
+    .logo {
+        margin:auto 0;
+    }
 }

@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   // Where files should be sent once they are bundled
  output: {
-   path: path.join(__dirname, '/viventcloud.com'),
+   path: path.join(__dirname, '/aysisinc.com'),
    filename: 'index.bundle.js'
  },
   // webpack 5 comes with devServer which loads in development mode
